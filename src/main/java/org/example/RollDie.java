@@ -4,12 +4,13 @@ import java.util.Random;
 
 public class RollDie {
 
+    private Die die;
     public RollDie(int numSides) {
-        Die die = new Die(numSides);
+        die = new Die(numSides);
     }
 
     public int rollDie() {
-        Random rand = new Random();
-        return rand.nextInt(Die.getNumSides()) + 1;
+        final Random rand = new Random();
+        return rand.nextInt(die.getNumSides()) + 1;
     }
 }

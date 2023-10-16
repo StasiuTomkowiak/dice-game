@@ -6,19 +6,19 @@ import static java.lang.System.in;
 import static java.lang.System.out;
 
 
-public class dice_game {
+public class Dicegame{
     public static void main(final String[] args) {
-        Scanner scanner = new Scanner(in);
+        final Scanner scanner = new Scanner(in);
 
         out.println("Welcome to the dice game! Choose the number of sides on the die: ");
-        int numSides = scanner.nextInt();
+        final int numSides = scanner.nextInt();
         scanner.nextLine();
 
-        RollDie player = new RollDie(numSides);
-        RollDie computer = new RollDie(numSides);
+        final RollDie player = new RollDie(numSides);
+        final RollDie computer = new RollDie(numSides);
 
-        int playerResult = player.rollDie();
-        int computerResult = computer.rollDie();
+        final int playerResult = player.rollDie();
+        final int computerResult = computer.rollDie();
 
         out.println("Player's roll result: " + playerResult);
         out.println("Computer's roll result: " + computerResult);

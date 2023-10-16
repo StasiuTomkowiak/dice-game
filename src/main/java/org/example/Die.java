@@ -1,15 +1,14 @@
 package org.example;
 
 public class Die {
-    private static int numSides;
+    private int numSides;
 
         public Die(int numSides) {
-            Die.numSides = numSides;
+            this.numSides = numSides;
         }
 
-        public static int getNumSides() {
+        public int getNumSides() {
+
             return numSides;
         }
-
-
 }
