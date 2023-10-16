@@ -1,2 +1,3 @@
 # dice-game
-tomkowiak
+stasiu
+
